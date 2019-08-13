@@ -50,6 +50,10 @@
 - create ssh under /User/Vincentxie
 > ssh-keygen -t rsa -C "youremail@example.com"
 
-- create new repo on GitHib called learnt
+- create new repo on GitHib called learngit
 > git remote add origin git@github.com:RunkunXie/learngit.git
 > git push -u origin master # 把当前分支推送到远程，-u可以关联本地和远程master分支
+
+- clone new repo from GitHub
+> git clone git@github.com:RunkunXie/gitskills.git
+
