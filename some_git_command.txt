@@ -57,3 +57,12 @@
 - clone new repo from GitHub
 > git clone git@github.com:RunkunXie/gitskills.git
 
+- create, switch to new branch
+> git checkout -b dev # 相当于 $ git branch dev, $ git checkout dev
+> git branch # 查看当前分支
+> git add readme.txt
+> git commit -m "xxx"
+> git checkout master
+> git merge dev # 合并分支
+> git branch
+
