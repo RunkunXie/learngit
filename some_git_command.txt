@@ -46,3 +46,10 @@
 > rm xxx.txt
 > git rm xxx.txt
 
+# Github
+- create ssh under /User/Vincentxie
+> ssh-keygen -t rsa -C "youremail@example.com"
+
+- create new repo on GitHib called learnt
+> git remote add origin git@github.com:RunkunXie/learngit.git
+> git push -u origin master # 把当前分支推送到远程，-u可以关联本地和远程master分支
