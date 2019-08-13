@@ -33,3 +33,16 @@
 > git reset --hard xxxx # 回到未来
 > git reflog # 看每个版本
 
+# 撤销修改
+- change file, add file, want to checkout it
+> git add readme.txt
+> git reset HEAD readme.txt # 把暂存区改动移回工作区
+> git checkout -- readme.txt # 删除工作区改动
+
+# 删除文件
+- add file and delete
+> git add xxx.txt
+> git commit -m "add xxx"
+> rm xxx.txt
+> git rm xxx.txt
+
