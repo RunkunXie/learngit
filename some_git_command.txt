@@ -2,6 +2,7 @@
 # 创建 git repository
 - create folder
 > git init
+> git ls -la
 
 # 添加新文件，创建初始版本
 - create file, e.g., readme.txt, write something in it.
@@ -12,7 +13,8 @@
 - open readme.txt, write documentation
 - create mission.txt
 > git status # 看什么文件改动了
-> git diff readme.txt # 看改动了哪里
+> git diff readme.txt # 看改动了哪里（工作区、暂存区的区别）
+> git diff HEAD -- readme.txt # 看改动了哪里（工作区、版本库的区别）
 > git add readme.txt 
 > git add mission.txt
 > git commit -m "write readme, and create new txt file"
