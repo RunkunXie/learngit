@@ -2,7 +2,7 @@
 # 创建 git repository
 - create folder
 > git init
-> git ls -la
+> ls -la
 
 # 添加新文件，创建初始版本
 - create file, e.g., readme.txt, write something in it.
@@ -66,3 +66,5 @@
 > git merge dev # 合并分支
 > git branch
 > git branch -d dev # 删除分支
+
+##
