@@ -86,8 +86,10 @@
 > git commit -m "issue-101 fixed"
 > git checkout master
 > git merge --no-ff -m "merged bug fix 101" issue-101
+> git log # 看一下改bug的commit id
 
 - return to work on feature1
 > git checkout dev
+> git cherry-pick 4c805e2 # 先合并刚刚的bug修改
 > git stash list
 > git stash pop # or git stash apply, git stash drop
