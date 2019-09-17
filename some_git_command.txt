@@ -104,3 +104,8 @@
 > git branch --set-upstream-to=origin/dev dev
 > git pull
 
+# remote dev
+> git checkout -b dev origin/dev
+> git push origin dev
+
+
