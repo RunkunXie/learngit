@@ -101,4 +101,7 @@
 > git push origin master # master分支是主分支，因此要时刻与远程同步
 > git push origin dev # dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步
 
+# remote dev
+> git checkout -b dev origin/dev
+> git push origin dev
 
