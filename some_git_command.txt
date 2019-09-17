@@ -27,8 +27,7 @@
 - Want to go back to previous version
 > git cat mission.txt # 看现在是啥
 > git log # 看有哪些版本
-> git reset --hard HEAD^ # 回到过去 上一个版本
-> git reset --hard HEAD~100 # 回到过去 往上100个版本
+> git reset --hard HEAD^ # 回到过去 上一个版本 > git reset --hard HEAD~100 # 回到过去 往上100个版本
 > git log # 想回到未来，先看未来的版本号码 commit id
 > git reset --hard xxxx # 回到未来
 > git reflog # 看每个版本
@@ -97,3 +96,9 @@
 # feature分支
 - 平时在dev分支上工作，开发一些新feature可在dev上新建feature分支
 > git branch -D <name> # 强制删除没合并的分支
+
+# push dev branch
+> git push origin master # master分支是主分支，因此要时刻与远程同步
+> git push origin dev # dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步
+
+
