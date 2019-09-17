@@ -93,3 +93,7 @@
 > git cherry-pick 4c805e2 # 先合并刚刚的bug修改
 > git stash list
 > git stash pop # or git stash apply, git stash drop
+
+# feature分支
+- 平时在dev分支上工作，开发一些新feature可在dev上新建feature分支
+> git branch -D <name> # 强制删除没合并的分支
