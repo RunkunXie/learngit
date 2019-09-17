@@ -57,6 +57,7 @@
 - clone new repo from GitHub
 > git clone git@github.com:RunkunXie/gitskills.git
 
+# 分支管理
 - create, switch to new branch
 > git checkout -b dev # 创建+切换分支 方法1
 	# 相当于 $ git branch dev, $ git checkout dev
@@ -69,5 +70,6 @@
 > git merge dev # 合并分支
 > git branch
 > git branch -d dev # 删除分支
+> git log --graph --pretty=oneline --abbrev-commit # 查看合并路径
 
 ##
