@@ -97,14 +97,24 @@
 - 平时在dev分支上工作，开发一些新feature可在dev上新建feature分支
 > git branch -D <name> # 强制删除没合并的分支
 
-# push dev branch
+# push dev branch - person A
 > git push origin master # master分支是主分支，因此要时刻与远程同步
 > git push origin dev # dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步
 
-> git branch --set-upstream-to=origin/dev dev
-> git pull
-
-# remote dev
+# remote dev - person B
 > git checkout -b dev origin/dev
+> git pull
+> git branch --set-upstream-to=origin/dev dev
 > git push origin dev
+
+# merge dev -- person B
+> git merge --no-ff -m "merge dev" dev
+> git add, git commit
+> git branch -d dev # 删除本地分支
+> git push origin -d dev # 删除远程分支
+
+# merge dev -- person A
+> git pull
+> git branch -d dev # 删除本地分支
+> git remote prune origin # 删除远程不存在分支
 
