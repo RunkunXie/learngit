@@ -74,4 +74,20 @@
 
 > git merge --no-ff -m "merge with no-ff" dev # 不用fast-forward合并, 新合并方法创建一个新commit
 
-##
+# bug分支
+- on branch feature1 (有改动 to be committed, not staged for commit)
+> git stash 
+> git status # 改动被储存, working directory clean
+> git checkout master
+> git checkout -b issue-101
+
+- after fixxiiiiiiiing bug
+> git add <name>
+> git commit -m "issue-101 fixed"
+> git checkout master
+> git merge --no-ff -m "merged bug fix 101" issue-101
+
+- return to work on feature1
+> git checkout dev
+> git stash list
+> git stash pop
