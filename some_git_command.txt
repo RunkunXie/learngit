@@ -90,4 +90,4 @@
 - return to work on feature1
 > git checkout dev
 > git stash list
-> git stash pop
+> git stash pop # or git stash apply, git stash drop
