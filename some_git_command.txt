@@ -72,4 +72,6 @@
 > git branch -d dev # 删除分支
 > git log --graph --pretty=oneline --abbrev-commit # 查看合并路径
 
+> git merge --no-ff -m "merge with no-ff" dev # 不用fast-forward合并, 新合并方法创建一个新commit
+
 ##
