@@ -1,15 +1,15 @@
 
-# 创建 git repository
+# Create git repository
 - create folder
 > git init
 > ls -la
 
-# 添加新文件，创建初始版本
+# Add new file，create start version
 - create file, e.g., readme.txt, write something in it.
 > git add readme.txt
 > git commit -m "create readme file"
 
-# 版本更新及储存
+# version update & store
 - open readme.txt, write documentation
 - create mission.txt
 > git status # 看什么文件改动了
@@ -23,7 +23,7 @@
 > git add mission.txt
 > git commit -m "write mission"
 
-# 版本回退
+# 版本回退 reset previous version
 - Want to go back to previous version
 > git cat mission.txt # 看现在是啥
 > git log # 看有哪些版本
@@ -32,13 +32,13 @@
 > git reset --hard xxxx # 回到未来
 > git reflog # 看每个版本
 
-# 撤销修改
+# 撤销修改 withdraw modification
 - change file, add file, want to checkout it
 > git add readme.txt
 > git reset HEAD readme.txt # 把暂存区改动移回工作区
 > git checkout -- readme.txt # 删除工作区改动
 
-# 删除文件
+# 删除文件 delete file
 - add file and delete
 > git add xxx.txt
 > git commit -m "add xxx"
@@ -56,7 +56,7 @@
 - clone new repo from GitHub
 > git clone git@github.com:RunkunXie/gitskills.git
 
-# 分支管理
+# 分支管理 branch
 - create, switch to new branch
 > git checkout -b dev # 创建+切换分支 方法1
 	# 相当于 $ git branch dev, $ git checkout dev
@@ -73,7 +73,7 @@
 
 > git merge --no-ff -m "merge with no-ff" dev # 不用fast-forward合并, 新合并方法创建一个新commit
 
-# bug分支
+# bug branch
 - on branch feature1 (有改动 to be committed, not staged for commit)
 > git stash 
 > git status # 改动被储存, working directory clean
@@ -93,7 +93,7 @@
 > git stash list
 > git stash pop # or git stash apply, git stash drop
 
-# feature分支
+# feature branch
 - 平时在dev分支上工作，开发一些新feature可在dev上新建feature分支
 > git branch -D <name> # 强制删除没合并的分支
 
