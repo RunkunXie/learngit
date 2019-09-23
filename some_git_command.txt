@@ -98,8 +98,10 @@
 > git branch -D <name> # 强制删除没合并的分支
 
 # push dev branch - person A
+> git push --set-upstream origin dev # remote dev branch
 > git push origin master # master分支是主分支，因此要时刻与远程同步
 > git push origin dev # dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步
+
 
 # remote dev - person B
 > git checkout -b dev origin/dev
